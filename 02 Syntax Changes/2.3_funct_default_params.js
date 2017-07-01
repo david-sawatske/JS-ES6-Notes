@@ -1,6 +1,6 @@
 // these apply to traditional and fat arrow functions
 
-function isEqToHere(number, compare = 10) {  // setting default of 0 to compare
+function isEqToHere(number, compare = 10) {  // setting default of 10 to compare
   return number == compare;
 }
 console.log(isEqToHere(10)); // => true

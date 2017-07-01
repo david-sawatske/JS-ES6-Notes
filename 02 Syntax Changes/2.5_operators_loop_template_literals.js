@@ -1,4 +1,4 @@
-// Rest Operator (...) //
+// Rest Operator (...) converts a list of values into an array
 let nums = [1,2,3,4,5];
 
 function sumUp(...toAdd) { // '...' is the rest operator. it will covert an
@@ -12,11 +12,11 @@ function sumUp(...toAdd) { // '...' is the rest operator. it will covert an
 console.log(sumUp(nums)); // => 15   without the rest operator included above
 
 // what if we don't have the numbers we want to work with in an array?
+//  => use the '...' rest op that converts the args into an array
+console.log(sumUp(1, 2, 3, 4, 5)); // => 15     not an array, 5 arguments
 
-console.log(sumUp(1, 2, 3, 4, 5)); // not an array, 5 arguments
 
-
-// Spread Operator (...) //
+// Spread Operator (...) splits an array into individual values
 let numbers = [1,2,3,4,5];
 // we want to get the max of these values
 console.log(Math.max(numbers)); // => NaN   .max expects a list of nums, not array
@@ -24,10 +24,10 @@ console.log(Math.max(...numbers)); // => 5  use the spread operator to split
                                    //       the array to individual values
 
 
-// the 'for' loop - a shorter syntax for looping through arrays
+// the 'for of' loop - a shorter syntax for looping through arrays
 let results = [1.23, 1.10, 4.1];
-for (let result of results) {
-  console.log(result);
+for (let result of results) { // result reps the individual val within the
+  console.log(result);        // results array that is currently being looped
 }
 // => 1.23
 //    1.1

@@ -21,8 +21,9 @@ let obj2 = {
 
 obj2.greet(); // => Max: 25
 
-
+// Dynamic Field - [ageField] on 28 looks for ageField var and use val as prop name
 let ageField = "age";
+
 let obj3 = {
   name: 'Max',
   [ageField]: 28, // looks for ageField var and uses its val. must give it value,
@@ -31,6 +32,6 @@ let obj3 = {
   }                                           // can still use the dot notation
 };
 
-obj3["greet me"](); // => Max: 28   calling a fn named with string
+obj3["greet me"](); // => Max: 28   calling a fn named with string using []
 console.log(obj3[ageField]); // => 28  you can access the val with the varible
                              //        that holds the property name, as well

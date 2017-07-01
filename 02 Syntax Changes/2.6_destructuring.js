@@ -18,7 +18,7 @@ console.log(numbers); // => [ 1, 2, 3 ]   we not affecting original array
 
 // ex with the rest parameter (...)
 let [c, ...d] = numbers;
-console.log(d); // => [ 2, 3 ]    puts remaining vals after 'a' into an array
+console.log(d); // => [ 2, 3 ]    puts remaining vals after 'c' into an array
 
 
 // swapping values
