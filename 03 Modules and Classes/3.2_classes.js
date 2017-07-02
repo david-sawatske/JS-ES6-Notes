@@ -57,3 +57,15 @@ max.greetTwice(); // => 'Hi from inside Max2'       'this' refs Man2
                   // => 'Hello, I'm Max2. I'm 27'   'this' refs Person (parent)
 
 console.log(max.__proto__ == Max.prototype); // => true
+
+
+// Static Methods //
+// helper classes contain methods, but do not instantiate new objects
+class Helper {
+  static logTwice(message) { // allows the method to be called without
+    console.log(message);    // creating an instance of the class first
+    console.log(message);
+  }
+}
+
+Helper.logTwice('logged!') // without 'static', this would throw error
