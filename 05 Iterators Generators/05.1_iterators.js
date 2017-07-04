@@ -55,7 +55,7 @@ console.log(it3.next()); // => { done: false, value: 12 }
 console.log(it3.next()); // => { done: false, value: 13 }
 console.log(it3.next()); // => { done: true, value: 14 }
 
-// another illustration - loops until value is > 14
+// another illustration - loops until value is > 13
 for (let element of array) {
   console.log(element);
 }
